@@ -1,0 +1,25 @@
+
+<template>
+        <header class="app-header shadow-sm bg-white">
+            <nav class="container mx-auto flex p-4 justify-between">
+                <NuxtLink class="font-bold">Fe Assignment</NuxtLink>
+                <ul class="flex gap-4">
+                    <li><NuxtLink to="/">Home</NuxtLink></li>
+                    <li><NuxtLink to="/about">About</NuxtLink></li>
+                    <li><NuxtLink to="/Products">Product</NuxtLink></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="app-content bg-gray-50">
+            <slot/>
+        </div>
+        <footer class="app-footer shadow-sm bg-white text-center p-3">
+            I am the app footer
+        </footer>
+</template>
+<style scoped>
+.router-link-exact-active{
+    color: #12b488;
+    font-weight: 600;
+}
+</style>
